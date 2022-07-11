@@ -38,7 +38,9 @@ This is very unhandy, as being able to source the output of all commands in `$PA
 
 ## Using [fisher](https://github.com/jorgebucaran/fisher)
 
-
+```sh
+fisher install yngvark/fs
+```
 
 ## Directly
 

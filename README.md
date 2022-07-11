@@ -26,7 +26,7 @@ Just like `source`.
 
 # Why?
 
-TL;DR: `source` in Fish shell ignores $PATH, but `fs` do not.
+TL;DR: `source` in Fish shell ignores $PATH, but `fs` does not.
 
 Fish's [documentation](https://fishshell.com/docs/current/cmds/source.html) states
 

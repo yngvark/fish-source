@@ -30,7 +30,7 @@ TL;DR: `source` in Fish shell ignores $PATH, but `fs` do not.
 
 Fish's [documentation](https://fishshell.com/docs/current/cmds/source.html) states
 
-> fish will search the working directory to resolve relative paths **but will not search [`PATH`](https://fishshell.com/docs/current/language.html#envvar-PATH) **.
+> fish will search the working directory to resolve relative paths **but will not search [`PATH`](https://fishshell.com/docs/current/language.html#envvar-PATH)**.
 
 This is very unhandy, as being able to source the output of all commands in `$PATH` is very useful. `fs` solves this.
 

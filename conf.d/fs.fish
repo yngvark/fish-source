@@ -1,7 +1,5 @@
 function _fs_install --on-event fs_install
     # Set universal variables, create bindings, and other initialization logic.
-    echo "You've just installed fs. See usage on:"
-    echo "https://github.com/yngvark/fs"
 end
 
 function _fs_update --on-event fs_update

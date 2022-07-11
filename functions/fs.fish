@@ -10,8 +10,8 @@ function fs --description "Source output of script (fs = fish source)."
 
     set -x IS_FISH_SOURCED true
 
-    if ! type -q $argv
-        echo Command not found: $argv
+    if ! type -q $argv[1]
+        echo Command not found: $argv[1]
         return 1
     end
 

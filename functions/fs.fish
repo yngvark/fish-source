@@ -15,7 +15,10 @@ function fs --description "Source output of script (fs = fish source)."
         return 1
     end
 
-    rm /tmp/fsout
+    if test -e /tmp/fsout
+        rm /tmp/fsout
+    end
+    
     $argv > /tmp/fsout
     set -l exit_code $status
 

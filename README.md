@@ -1,6 +1,9 @@
-# Usage
+# Fish source
 
-`fs`acts like `source`. It executes commands in the current shell.
+
+## Usage
+
+`fs` acts like `source`. It executes commands in the current shell.
 
 Example:
 
@@ -24,7 +27,7 @@ then your shell will now be in the root directory:
 
 Just like `source`.
 
-# Why?
+## Why?
 
 TL;DR: `source` in Fish shell ignores $PATH, but `fs` does not.
 
@@ -34,15 +37,15 @@ Fish's [documentation](https://fishshell.com/docs/current/cmds/source.html) stat
 
 This is very unhandy, as being able to source the output of all commands in `$PATH` is very useful. `fs` solves this.
 
-# Installation
+## Installation
 
-## Using [fisher](https://github.com/jorgebucaran/fisher)
+### Using [fisher](https://github.com/jorgebucaran/fisher)
 
 ```sh
 fisher install yngvark/fs
 ```
 
-## Directly
+### Directly
 
 Put [fs.fish](fisher-plugin/functions/fs.fish) into `~/.config/fish/functions`.
 

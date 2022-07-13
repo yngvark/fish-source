@@ -8,6 +8,15 @@ function fs --description "Source output of script (fs = fish source)."
         return 1
     end
 
+    if [ $argv[1] = "-h" ]
+        echo "fs is equivalent to source, but respects \$PATH."
+        echo "For more information, see: https://github.com/yngvark/fish-source"
+        echo
+        echo "See:"
+        echo "source -h"
+        return 0
+    end
+
     set -x IS_FISH_SOURCED true
 
     if ! type -q $argv[1]

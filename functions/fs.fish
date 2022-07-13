@@ -17,8 +17,6 @@ function fs --description "Source output of script (fs = fish source)."
         return 0
     end
 
-    set -x IS_FISH_SOURCED true
-
     if ! type -q $argv[1]
         echo Command not found: $argv[1]
         return 1
@@ -27,6 +25,9 @@ function fs --description "Source output of script (fs = fish source)."
     if test -e /tmp/fsout
         rm /tmp/fsout
     end
+
+    # This lets scripts have a way of knowing if they're being sourced through fs.
+    set -x IS_FISH_SOURCED true
     
     $argv > /tmp/fsout
     set -l exit_code $status

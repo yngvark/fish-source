@@ -1,9 +1,9 @@
 # Fish source
 
+Fish source ("`fs`") is like `source`. It executes the output of a command in the current Fish shell.
+
 
 ## Usage
-
-`fs` acts like `source`. It executes commands in the current shell.
 
 Example:
 

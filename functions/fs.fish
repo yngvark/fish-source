@@ -9,7 +9,7 @@ function fs --description "Source output of script (fs = fish source)."
     end
 
     if [ $argv[1] = "-h" ]
-        echo "fs is equivalent to source, but respects \$PATH."
+        echo "fs (fish-source) is equivalent to source, but respects \$PATH."
         echo "For more information, see: https://github.com/yngvark/fish-source"
         echo
         echo "See:"
@@ -34,7 +34,7 @@ function fs --description "Source output of script (fs = fish source)."
 
     if not test $exit_code -eq 0
         echo
-        echo "Error: command $argv returned exit code $exit_code."
+        echo "fs error: command $argv returned exit code $exit_code."
 
         if test -e /tmp/fsout
         and test -s /tmp/fsout

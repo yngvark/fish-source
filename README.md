@@ -47,5 +47,9 @@ fisher install yngvark/fs
 
 ### Directly
 
-Put [fs.fish](fisher-plugin/functions/fs.fish) into `~/.config/fish/functions`.
+Put [fs.fish](fisher-plugin/functions/fs.fish) into `~/.config/fish/functions`:
+
+```shell
+wget https://raw.githubusercontent.com/yngvark/fish-source/main/functions/fs.fish -O ~/.config/fish/functions/fs.fish
+```
 
